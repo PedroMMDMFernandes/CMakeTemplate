@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "stm32h7xx.h": "c"
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/."
+}

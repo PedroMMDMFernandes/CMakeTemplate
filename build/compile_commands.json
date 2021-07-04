@@ -1,0 +1,17 @@
+[
+{
+  "directory": "C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/build",
+  "command": "C:\\PROGRA~2\\GNUARM~1\\102020~1\\bin\\AR19DD~1.EXE -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER -I../src -I../device -I../CMSIS -I../device/../CMSIS/Include -I../device/../src -I../device/Inc -I../CMSIS/Device/ST/STM32H7xx/Include/. -g -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -c -Wall -O0 -g3 -std=c99 -o CMakeFiles\\CMAKE_Simple.elf.dir\\src\\main.c.obj -c C:\\dev\\STM32H7\\Workspace\\Cmake_C++_VS\\Simple\\src\\main.c",
+  "file": "C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/src/main.c"
+},
+{
+  "directory": "C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/build",
+  "command": "C:\\PROGRA~2\\GNUARM~1\\102020~1\\bin\\AR19DD~1.EXE -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER -I../device/../CMSIS/Include -I../device/../src -I../device/Inc -I../CMSIS/Device/ST/STM32H7xx/Include/. -g -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -c -Wall -O0 -g3 -o device\\CMakeFiles\\DEVICE.dir\\startup_stm32h743zitx.s.obj -c C:\\dev\\STM32H7\\Workspace\\Cmake_C++_VS\\Simple\\device\\startup_stm32h743zitx.s",
+  "file": "C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/device/startup_stm32h743zitx.s"
+},
+{
+  "directory": "C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/build",
+  "command": "C:\\PROGRA~2\\GNUARM~1\\102020~1\\bin\\AR19DD~1.EXE -DDEBUG -DSTM32H743xx -DUSE_HAL_DRIVER -I../device/../CMSIS/Include -I../device/../src -I../device/Inc -I../CMSIS/Device/ST/STM32H7xx/Include/. -g -mcpu=cortex-m7 -mthumb -mfpu=fpv5-d16 -mfloat-abi=hard -fdata-sections -ffunction-sections -c -Wall -O0 -g3 -std=c99 -o device\\CMakeFiles\\DEVICE.dir\\system_stm32h7xx.c.obj -c C:\\dev\\STM32H7\\Workspace\\Cmake_C++_VS\\Simple\\device\\system_stm32h7xx.c",
+  "file": "C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/device/system_stm32h7xx.c"
+}
+]

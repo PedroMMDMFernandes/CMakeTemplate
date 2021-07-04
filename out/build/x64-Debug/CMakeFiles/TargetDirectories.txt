@@ -1,0 +1,10 @@
+C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/out/build/x64-Debug/CMakeFiles/CMAKE_Simple.elf.dir
+C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/out/build/x64-Debug/CMSIS/CMakeFiles/edit_cache.dir
+C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/out/build/x64-Debug/CMSIS/CMakeFiles/rebuild_cache.dir
+C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/out/build/x64-Debug/CMSIS/Device/ST/STM32H7xx/Include/CMakeFiles/rebuild_cache.dir
+C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/out/build/x64-Debug/CMSIS/Device/ST/STM32H7xx/Include/CMakeFiles/edit_cache.dir
+C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/out/build/x64-Debug/device/CMakeFiles/DEVICE.dir
+C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/out/build/x64-Debug/device/CMakeFiles/edit_cache.dir
+C:/dev/STM32H7/Workspace/Cmake_C++_VS/Simple/out/build/x64-Debug/device/CMakeFiles/rebuild_cache.dir
