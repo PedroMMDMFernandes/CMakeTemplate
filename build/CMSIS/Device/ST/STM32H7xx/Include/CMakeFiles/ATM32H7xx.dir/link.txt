@@ -1,2 +1,0 @@
-"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin/arm-none-eabi-ar.exe" qc libATM32H7xx.a 
-"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin/arm-none-eabi-ranlib.exe" libATM32H7xx.a

@@ -1,2 +1,0 @@
-"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin/arm-none-eabi-ar.exe" qc libDEVICE.a CMakeFiles/DEVICE.dir/startup_stm32h743xx.s.obj CMakeFiles/DEVICE.dir/system_stm32h7xx.c.obj
-"C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin/arm-none-eabi-ranlib.exe" libDEVICE.a
