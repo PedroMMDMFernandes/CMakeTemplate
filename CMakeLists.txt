@@ -22,11 +22,36 @@ message(STATUS "CMAKE_TOOLCHAIN_FILE is: ${CMAKE_TOOLCHAIN_FILE}")
 
 # List of source files
 set(SRC_FILES
-        src/main.c
+        src/MCAL/src/main.c
         )
+
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/CMSIS)
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/device)
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/src)
+
+file(GLOB_RECURSE _headers CONFIGURE_DEPENDS
+     "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h"
+)
 
 # Build the executable based on the source files
 add_executable(${EXECUTABLE} ${SRC_FILES})
+
+# List of include directories
+target_include_directories(${EXECUTABLE} PRIVATE
+        src
+    device
+    CMSIS
+)
+
+
+
+target_link_libraries(${EXECUTABLE} PUBLIC
+        LIB_MCAL
+        LIB_DEVICE
+        LIB_STM32H7xx
+        
+)
+
 
 # List of compiler defines, prefix with -D compiler option
 target_compile_definitions(${EXECUTABLE} PRIVATE
@@ -37,26 +62,6 @@ target_compile_definitions(${EXECUTABLE} PRIVATE
 
 #file(GLOB_RECURSE STM32H7xx CONFIGURE_DEPENDS CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h)
 #file(GLOB_RECURSE STM32H7xx CONFIGURE_DEPENDS CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h)
-
-
-add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/CMSIS)
-add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/device)
-
-# List of include directories
-target_include_directories(${EXECUTABLE} PRIVATE
-    src 
-    device
-    CMSIS
-)
-
-
-
-target_link_libraries(${EXECUTABLE} PUBLIC
-        DEVICE
-        STM32H7xx
-)
-
-
 
 #include_directories("CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h")
 #include_directories("CMSIS/Device/ST/STM32H7xx/Include/stm32h743xx.h")
@@ -106,3 +111,6 @@ add_custom_command(TARGET ${EXECUTABLE}
 
 #sset_target_properties(${EXECUTABLE} PROPERTIES LINKER_LANGUAGE C)
 
+add_custom_target("${EXECUTABLE}_All")
+
+add_dependencies("${EXECUTABLE}_All" "${EXECUTABLE}")
